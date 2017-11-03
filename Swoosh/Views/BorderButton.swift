@@ -14,6 +14,8 @@ class BorderButton: UIButton {
         super.awakeFromNib()
         layer.borderWidth = 3.0
         layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+        layer.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.469338613)
     }
 
 }
