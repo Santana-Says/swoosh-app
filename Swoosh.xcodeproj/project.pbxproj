@@ -13,6 +13,8 @@
 		B5CECE361FABF93700B5F8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CECE351FABF93700B5F8F1 /* Assets.xcassets */; };
 		B5CECE391FABF93700B5F8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CECE371FABF93700B5F8F1 /* LaunchScreen.storyboard */; };
 		B5CECE421FAC08E600B5F8F1 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CECE411FAC08E600B5F8F1 /* BorderButton.swift */; };
+		B5FC833D1FAE481B00393AF6 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC833C1FAE481B00393AF6 /* LeagueVC.swift */; };
+		B5FC833F1FAE482C00393AF6 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC833E1FAE482C00393AF6 /* SkillVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B5CECE381FABF93700B5F8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5CECE3A1FABF93700B5F8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CECE411FAC08E600B5F8F1 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		B5FC833C1FAE481B00393AF6 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		B5FC833E1FAE482C00393AF6 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,10 @@
 		B5CECE2D1FABF93700B5F8F1 /* Swoosh */ = {
 			isa = PBXGroup;
 			children = (
-				B5CECE401FAC08B800B5F8F1 /* Views */,
+				B5CECE461FAC2C6B00B5F8F1 /* Model */,
+				B5CECE451FAC2C6000B5F8F1 /* Controller */,
+				B5CECE401FAC08B800B5F8F1 /* View */,
 				B5CECE2E1FABF93700B5F8F1 /* AppDelegate.swift */,
-				B5CECE301FABF93700B5F8F1 /* ViewController.swift */,
 				B5CECE321FABF93700B5F8F1 /* Main.storyboard */,
 				B5CECE351FABF93700B5F8F1 /* Assets.xcassets */,
 				B5CECE371FABF93700B5F8F1 /* LaunchScreen.storyboard */,
@@ -67,12 +72,29 @@
 			path = Swoosh;
 			sourceTree = "<group>";
 		};
-		B5CECE401FAC08B800B5F8F1 /* Views */ = {
+		B5CECE401FAC08B800B5F8F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B5CECE411FAC08E600B5F8F1 /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5CECE451FAC2C6000B5F8F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5CECE301FABF93700B5F8F1 /* ViewController.swift */,
+				B5FC833C1FAE481B00393AF6 /* LeagueVC.swift */,
+				B5FC833E1FAE482C00393AF6 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5CECE461FAC2C6B00B5F8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CECE311FABF93700B5F8F1 /* ViewController.swift in Sources */,
+				B5FC833D1FAE481B00393AF6 /* LeagueVC.swift in Sources */,
 				B5CECE2F1FABF93700B5F8F1 /* AppDelegate.swift in Sources */,
+				B5FC833F1FAE482C00393AF6 /* SkillVC.swift in Sources */,
 				B5CECE421FAC08E600B5F8F1 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD94K2S3RY;
 				INFOPLIST_FILE = Swoosh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Square-Built.Swoosh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD94K2S3RY;
 				INFOPLIST_FILE = Swoosh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Square-Built.Swoosh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
